@@ -10,7 +10,8 @@
         <h1 class='content'>
             {{ $post->title }}
         </h1>Blog Name</h1>
-        <div class='posts'>
+        <div class="edit">
+            <a href="/posts/{{ $post->id }}/edit"></a>
             <div class='content_post'>
                 <h3>本文</h3>
                 <p class='body'>{{ $post->body }}</p>
